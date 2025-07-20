@@ -1,7 +1,7 @@
 # ![ddflare](img/ddflare-lgh-gw.svg)
 
 
-ddflare is a [DDNS (Dynamic DNS)](https://en.wikipedia.org/wiki/Dynamic_DNS) library that allows DNS record
+ddflare is a [DDNS (Dynamic DNS)](https://en.wikipedia.org/wiki/Dynamic_DNS) go library that allows DNS record
 updates via either the [Cloudflare API](https://developers.cloudflare.com/api/) or
 the [DynDNS update prococol v3](https://help.dyn.com/remote-access-api/perform-update/).
 
@@ -16,6 +16,10 @@ It comes with a CLI tool built on top of the library and released for different 
     In order to update your DNS records with ddflare you need a DNS domain registered with Cloudflare
     or a registratrion to a Dynamic DNS service provider
     (e.g., [No-IP](https://www.noip.com), [Dyn](https://account.dyn.com/), ...).
+
+## Quickstart
+* [CLI](ddflare-cli-install.md)
+* [go library](quickstart-library.md)
 
 ## Features
 
