@@ -142,5 +142,6 @@ nav:
     - Install: ddflare-cli-install.md
     - Quickstart: ddflare-cli-quickstart.md
     - Update: ddflare-cli-update.md
+    - K8s: ddflare-k8s.md
   - ddflare Library: quickstart-library.md
 
