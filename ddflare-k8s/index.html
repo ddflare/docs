@@ -504,6 +504,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    K8s
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -515,6 +528,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ddns-service-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDNS service Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudflare-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloudflare Deployment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -570,6 +620,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ddns-service-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDNS service Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudflare-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloudflare Deployment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -593,8 +669,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>kubectl<span class="w"> </span>-n<span class="w"> </span>ddflare<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span>my-domain<span class="w"> </span>--from-literal<span class="o">=</span><span class="nv">token</span><span class="o">=</span>&lt;SERVICE_CREDENTIALS&gt;
 </span></code></pre></div>
 and pass it to the ddflare deployment via an environment variable.</p>
-<h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h1>
-<h2 id="ddns-service-no-ip">DDNS service (No-IP)<a class="headerlink" href="#ddns-service-no-ip" title="Permanent link">&para;</a></h2>
+<h2 id="ddns-service-deployment">DDNS service Deployment<a class="headerlink" href="#ddns-service-deployment" title="Permanent link">&para;</a></h2>
 <p>Prerequisite is to register for a No-IP account and get a FQDN and the authentication credentials as explained in the
 <a href="../ddflare-cli-update/#update-domain-name-via-ddns-services">Update section</a>.</p>
 <table>
@@ -657,7 +732,7 @@ and pass it to the ddflare deployment via an environment variable.</p>
 with:
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>myhost-ddns-net.yaml
 </span></code></pre></div></p>
-<h2 id="cloudflare">Cloudflare<a class="headerlink" href="#cloudflare" title="Permanent link">&para;</a></h2>
+<h2 id="cloudflare-deployment">Cloudflare Deployment<a class="headerlink" href="#cloudflare-deployment" title="Permanent link">&para;</a></h2>
 <p>Prerequisite is to have registered a domain with Couldflare and have created a <em>type A record</em> and a <em>Cloudflare API token</em>
 as explained in the <a href="../ddflare-cli-update/#update-domain-name-via-cloudflare">Update section</a>.</p>
 <table>
