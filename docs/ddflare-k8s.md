@@ -8,8 +8,7 @@ kubectl -n ddflare create secret generic my-domain --from-literal=token=<SERVICE
 ```
 and pass it to the ddflare deployment via an environment variable.
 
-# Examples
-## DDNS service (No-IP)
+## DDNS service Deployment
 Prerequisite is to register for a No-IP account and get a FQDN and the authentication credentials as explained in the
 [Update section](../ddflare-cli-update/#update-domain-name-via-ddns-services).
 
@@ -60,7 +59,7 @@ with:
 kubectl apply -f myhost-ddns-net.yaml
 ```
 
-## Cloudflare
+## Cloudflare Deployment
 Prerequisite is to have registered a domain with Couldflare and have created a _type A record_ and a _Cloudflare API token_
 as explained in the [Update section](../ddflare-cli-update/#update-domain-name-via-cloudflare).
 
