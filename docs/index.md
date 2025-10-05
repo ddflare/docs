@@ -3,7 +3,7 @@
 
 ddflare is a [DDNS (Dynamic DNS)](https://en.wikipedia.org/wiki/Dynamic_DNS) go library that allows DNS record
 updates via either the [Cloudflare API](https://developers.cloudflare.com/api/) or
-the [DynDNS update prococol v3](https://help.dyn.com/remote-access-api/perform-update/).
+the [DynDNS update protocol v3](https://help.dyn.com/remote-access-api/perform-update/).
 
 !!!Note
     The [DynDNS update prococol v3](https://help.dyn.com/remote-access-api/) is an HTTP API introduced
